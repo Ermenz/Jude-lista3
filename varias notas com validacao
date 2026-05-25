@@ -1,0 +1,24 @@
+while True:
+    soma = 0
+    cont = 0
+
+    while cont < 2:
+        nota = float(input())
+
+        if nota < 0 or nota > 10:
+            print("nota invalida")
+        else:
+            soma += nota
+            cont += 1
+
+    media = soma / 2
+    print(f"media = {media:.2f}")
+
+    while True:
+        print("novo calculo (1-sim 2-nao)")
+        x = int(input())
+
+        if x == 1:
+            break
+        elif x == 2:
+            exit()
